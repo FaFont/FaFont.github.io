@@ -1,0 +1,99 @@
+.page-index {
+	background-color: #3f51b5;
+	min-height: 100vh;
+}
+.page-index h2 {
+	font-size: 80px;
+	color: #e91e63;
+}
+.page-index h3 {
+	font-size: 42px;
+}
+.page-index .bg-light {
+	width: 80%;
+	padding: 50px;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, 0%);
+}
+@media (max-width: 767px) {
+	.page-index h2 {
+		font-size: 50px;
+	}
+	.page-index h3 {
+		font-size: 28px;
+	}
+	.page-index .bg-light {
+		width: 100%;
+	}
+}
+
+.fw-100 { font-weight: 100!important; }
+.fw-200 { font-weight: 200!important; }
+.fw-300 { font-weight: 300!important; }
+.fw-400 { font-weight: 400!important; }
+.fw-500 { font-weight: 500!important; }
+.fw-600 { font-weight: 600!important; }
+.fw-700 { font-weight: 700!important; }
+.fw-750 { font-weight: 750!important; }
+.fw-800 { font-weight: 800!important; }
+.fw-850 { font-weight: 850!important; }
+.fw-900 { font-weight: 900!important; }
+.fw-950 { font-weight: 950!important; }
+.text-break { word-wrap: break-word; }
+
+.ff-Ahang { font-family: Ahang!important; }
+.ff-AhangSharp { font-family: AhangSharp!important; }
+.ff-Alibaba { font-family: Alibaba!important; }
+.ff-Anjoman { font-family: Anjoman!important; }
+.ff-AnjomanFN { font-family: AnjomanFN!important; }
+.ff-Aria { font-family: Aria!important; }
+.ff-AriaFN { font-family: AriaFN!important; }
+.ff-AzarMehr { font-family: AzarMehr!important; }
+.ff-AzarMehrFN { font-family: AzarMehrFN!important; }
+.ff-Azhdar { font-family: Azhdar!important; }
+.ff-AzhdarFN { font-family: AzhdarFN!important; }
+.ff-Bidad { font-family: Bidad!important; }
+.ff-Daal { font-family: Daal!important; }
+.ff-Dana { font-family: Dana!important; }
+.ff-DanaFN { font-family: DanaFN!important; }
+.ff-Dana2 { font-family: Dana2!important; }
+.ff-Dana2FN { font-family: Dana2FN!important; }
+.ff-Dibaj { font-family: Dibaj!important; }
+.ff-Farhang { font-family: Farhang!important; }
+.ff-FarhangFN { font-family: FarhangFN!important; }
+.ff-FarhangSharp { font-family: FarhangSharp!important; }
+.ff-Irancell { font-family: Irancell!important; }
+.ff-IRAN { font-family: IRAN!important; }
+.ff-IRANSharp { font-family: IRANSharp!important; }
+.ff-IRANSans { font-family: IRANSans!important; }
+.ff-IRANSansFN { font-family: IRANSansFN!important; }
+.ff-IRANSansX { font-family: IRANSansX!important; }
+.ff-IRANSansXFN { font-family: IRANSansXFN!important; }
+.ff-IRANSansDN { font-family: IRANSansDN!important; }
+.ff-IRANSansDNFN { font-family: IRANSansDNFN!important; }
+.ff-IRANYekan { font-family: IRANYekan!important; }
+.ff-IRANYekanFN { font-family: IRANYekanFN!important; }
+.ff-Kalameh { font-family: Kalameh!important; }
+.ff-KalamehFN { font-family: KalamehFN!important; }
+.ff-Kara { font-family: Kara!important; }
+.ff-Morabba { font-family: Morabba!important; }
+.ff-Noora { font-family: Noora!important; }
+.ff-NooraFN { font-family: NooraFN!important; }
+.ff-Omid { font-family: Omid!important; }
+.ff-On { font-family: On!important; }
+.ff-Pelak { font-family: Pelak!important; }
+.ff-PelakFN { font-family: PelakFN!important; }
+.ff-Peyda { font-family: Peyda!important; }
+.ff-Pinar { font-family: Pinar!important; }
+.ff-PinarFN { font-family: PinarFN!important; }
+.ff-Ravi { font-family: Ravi!important; }
+.ff-Tahrir { font-family: Tahrir!important; }
+.ff-Tajrid { font-family: Tajrid!important; }
+.ff-Traffic { font-family: Traffic!important; }
+.ff-Vanda { font-family: Vanda!important; }
+.ff-VandaFN { font-family: VandaFN!important; }
+.ff-YekanBakh { font-family: YekanBakh!important; }
