@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="shortcut icon" href="../icon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+	<style>
+	  @import url("https://cdn.jsdelivr.net/gh/FaFont/CDN/IRANSans.css");
+	  body {
+		font-family: IRANSans, sans-serif;
+	  }
+	  .page-index {
+		background-color: #3f51b5;
+		min-height: 100vh;
+	  }
+	  .page-index h2 {
+		font-size: 80px;
+		color: #e91e63;
+	  }
+	  .page-index h3 {
+		font-size: 42px;
+	  }
+	  .page-index .bg-light {
+		width: 80%;
+		padding: 50px;
+		text-align: center;
+		border-radius: 5px;
+		position: relative;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, 0%);
+	  }
+	  @media (max-width: 767px) {
+		.page-index h2 {
+		  font-size: 50px;
+		}
+		.page-index h3 {
+		  font-size: 28px;
+		}
+		.page-index .bg-light {
+		  width: 100%;
+		}
+	  }
+	  .fw-100 { font-weight: 100!important; }
+	  .fw-200 { font-weight: 200!important; }
+	  .fw-300 { font-weight: 300!important; }
+	  .fw-400 { font-weight: 400!important; }
+	  .fw-500 { font-weight: 500!important; }
+	  .fw-600 { font-weight: 600!important; }
+	  .fw-700 { font-weight: 700!important; }
+	  .fw-750 { font-weight: 750!important; }
+	  .fw-800 { font-weight: 800!important; }
+	  .fw-850 { font-weight: 850!important; }
+	  .fw-900 { font-weight: 900!important; }
+	  .fw-950 { font-weight: 950!important; }
+	  .text-break { word-wrap: break-word; }
+
+	  .ff-IRANSans { font-family: IRANSans!important; }
+	</style>
+	<script src="../fonts.js"></script>
+	<script>
+	  IRANSans();
+	</script>
+  </head>
+  <body>
+	<div class="page-index py-3">
+	  <div class="bg-light shadow">
+		<a href="../index.html" class="text-decoration-none"><h2 class="fw-900" id="page-title"></h2></a>
+		<h3 class="fw-700" id="font-title">فونت</h3>
+		<div class="bg-white mt-5 px-3 py-3 text-start border border-3 rounded">
+		  <div id="font-name-div" class="mb-3">
+			<i class="bi bi-type fs-5"></i> <p class="fw-600 d-inline">نام انگلیسی:</p> <p id="font-name" class="d-inline"></p>
+		  </div>
+		  <div id="font-version-div" class="my-3">
+			<i class="bi bi-info-circle-fill fs-5"></i> <p class="fw-600 d-inline">ورژن:</p> <p id="font-version" class="d-inline"></p>
+		  </div>
+		  <div id="font-creator-div" class="my-3">
+			<i class="bi bi-person-fill fs-5"></i> <p class="fw-600 d-inline">طراح:</p> <p id="font-creator" class="d-inline"></p>
+		  </div>
+		  <div id="font-weights-div" class="my-3">
+			<i class="bi bi-type-bold fs-5"></i> <p class="fw-600 d-inline">وزن‌ها:</p> <p id="font-weights" class="d-inline"></p>
+		  </div>
+		  <div id="font-shop-div" class="my-3">
+			<i class="bi bi-credit-card-fill fs-5"></i> <p class="fw-600 d-inline">خرید از وب‌سایت رسمی:</p> <a id="font-shop" class="d-inline" href="#" target="_blank"></a>
+		  </div>
+		  <div id="fontface-code-div" class="my-3">
+			<i class="bi bi-code-slash fs-5"></i> <p class="fw-600 d-inline">کد فونت‌فیس:</p>
+			<button class="btn btn-copy btn-warning btn-sm float-end" data-clipboard-target="#fontface-code"><i class="bi bi-clipboard"></i></button>
+			<pre class="mt-1 p-1 w-100 bg-light text-dark text-end"><code id="fontface-code"></code></pre>
+		  </div>
+		  <div class="mt-4 text-center">
+			<button type="button" class="btn m-2 btn-primary" data-bs-toggle="modal" data-bs-target="#font-sample"><i class="bi bi-eye-fill"></i> مشاهده نمونه فونت</button>
+		  </div>
+		</div>
+		<nav class="mt-5">
+		  <ul class="pagination justify-content-center">
+			<li  id="previous-font-link-div" class="page-item">
+			  <a id="previous-font-link" class="page-link" href="#"><i class="bi bi-arrow-right-circle"></i> فونت قبل</a>
+			</li>
+			<li  id="homepage-link-div" class="page-item">
+			  <a id="homepage-link" class="page-link" href="../index.html"><i class="bi bi-house"></i> خانه</a>
+			</li>
+			<li  id="next-font-link-div" class="page-item">
+			  <a id="next-font-link" class="page-link" href="#">فونت بعد <i class="bi bi-arrow-left-circle"></i></a>
+			</li>
+		  </ul>
+		</nav>
+	  </div>
+	</div>
+	<div class="modal fade ff-IRANSans" id="font-sample" tabindex="-1" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title fw-700" id="font-sampleTitle">نمونه فونت</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		  </div>
+		  <div class="modal-body" id="modal-body">
+		  <input type="text" class="form-control mb-2" id="sample-text-input" oninput="sampleTextShow();" placeholder="">
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<script>
+	  setInfo(); showWeights(font_weights); sampleTextShow();
+	  
+	  function setInfo() {
+	    document.title = default_site_name + " | " + this_font;
+		document.getElementById("page-title").innerText = default_site_name;
+	    document.getElementById("font-title").innerText = "فونت " + font_name;
+	    document.getElementById("font-name").innerText = this_font;
+	    document.getElementById("font-version").innerText = font_version;
+		if (font_creator != null) {
+		  document.getElementById("font-creator-div").classList.remove("d-none");
+		  document.getElementById("font-creator").innerText = font_creator;
+		} else {
+		  document.getElementById("font-creator-div").classList.add("d-none");
+		}
+		for (i = 0; i < font_weights.length; i++) {
+		  weightsP = document.getElementById("font-weights");
+		  weightsP.innerHTML = weightsP.innerHTML + '\n\t\t\t<span class="badge bg-success">' + font_weights[i] + '</span>';
+		}
+		if (font_buyable == true) {
+		  document.getElementById("font-shop-div").classList.remove("d-none");
+		  document.getElementById("font-shop").innerHTML = font_shop_domain + '<i class="bi bi-box-arrow-up-left align-middle mx-1" style="font-size: .8rem!important;"></i>';
+		  document.getElementById("font-shop").href = font_shop_url;
+		} else {
+		  document.getElementById("font-shop-div").classList.add("d-none");
+		}
+	    document.getElementById("fontface-code").innerText = '@import url("' + fontface_url + '");';
+		if (previous_font != null) {
+		  document.getElementById("previous-font-link-div").classList.remove("disabled");
+		  document.getElementById("previous-font-link").href = "../" + previous_font + "/index.html";
+		} else {
+		  document.getElementById("previous-font-link-div").classList.add("disabled");
+		}
+		if (next_font != null) {
+		  document.getElementById("next-font-link-div").classList.remove("disabled");
+		  document.getElementById("next-font-link").href = "../" + next_font + "/index.html";
+		} else {
+		  document.getElementById("next-font-link-div").classList.add("disabled");
+		}
+		document.getElementById("font-sampleTitle").innerText = "نمونه فونت " + font_name;
+		document.getElementById("sample-text-input").placeholder = default_sample_text;
+	  }
+
+	  function showWeights(weights) {
+		modal = document.getElementById("modal-body");
+		for (var i = 0; i < weights.length; i++) {
+		  content = modal.innerHTML;
+		  if (weights[i] != "italic") {
+			modal.innerHTML = content + '\n\t\t\t<div class="d-flex flex-row align-items-center my-1">\n\t\t\t  <span class="badge rounded-pill bg-success">' + weights[i] + '</span>\n\t\t\t  <p class="fw-' + weights[i] + ' w-100 text-center text-break my-auto sample-text"></p>\n\t\t\t</div>';
+		  } else if (weights[i] == "italic") {
+			for (var j = 0; j < weights.length - 1; j++) {
+			  modalHTML = modal.innerHTML;
+			  modal.innerHTML = modalHTML + '<div class="d-flex flex-row align-items-center my-1"><span class="badge rounded-pill bg-success">' + weights[j] + 'i</span><p class="fw-' + weights[j] + ' w-100 fst-italic text-center text-break my-auto sample-text"></p></div>';
+			}
+		  }
+		}
+	  }
+	  
+	  function sampleTextShow() {
+		texts = document.getElementsByClassName("sample-text");
+		input = document.getElementById("sample-text-input");
+		for (var i = 0; i < texts.length; i++) {
+		  if (input.value == "") {
+			texts[i].innerText = default_sample_text;
+		  } else {
+			texts[i].innerText = input.value;
+		  }
+		}
+	  }
+
+	  var copyCode = new Clipboard(".btn-copy");
+
+	  copyCode.on("success", function(event) {
+		event.clearSelection();
+		event.trigger.innerHTML = '<i class="bi bi-clipboard-check"></i>';
+		event.trigger.classList.add("btn-success");
+		event.trigger.classList.remove("btn-warning");
+		window.setTimeout(function() {
+		  event.trigger.innerHTML = '<i class="bi bi-clipboard"></i>';
+		  event.trigger.classList.add("btn-warning");
+		  event.trigger.classList.remove("btn-success");
+		  event.trigger.classList.remove("btn-danger");
+		}, 2300);
+	  });
+
+	  copyCode.on("error", function(event) { 
+		event.trigger.innerHTML = '<i class="bi bi-clipboard-x"></i>';
+		event.trigger.classList.add("btn-danger");
+		event.trigger.classList.remove("btn-warning");
+		window.setTimeout(function() {
+		  event.trigger.innerHTML = '<i class="bi bi-clipboard"></i>';
+		  event.trigger.classList.add("btn-warning");
+		  event.trigger.classList.remove("btn-success");
+		  event.trigger.classList.remove("btn-danger");
+		}, 2000);
+	  });
+	</script>
+  </body>
+</html>
