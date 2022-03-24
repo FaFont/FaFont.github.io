@@ -2,8 +2,8 @@ default_site_name = "فونت سی‌دی‌اِن";
 default_url = "https://cdn.jsdelivr.net/gh/fafont/cdn";
 default_sample_text = "خداوند کیهان و گردان‌سپهر ۱۲۳ Quick brown fox 123";
 
-font_names_en = ["Ahang", "AhangSharp", "Alibaba", "Anjoman", "AnjomanFN", "Aria", "AriaFN", "AzarMehr", "AzarMehrFN", "Azhdar", "AzhdarFN", "Bidad", "Daal", "Dana", "DanaFN", "Dana2", "Dana2FN", "Dibaj", "Farhang", "FarhangFN", "FarhangSharp", "Irancell", "IRAN", "IRANSharp", "IRANSans", "IRANSansFN", "IRANSansX", "IRANSansXFN", "IRANSansDN", "IRANSansDNFN", "IRANYekan", "IRANYekanFN", "Kalameh", "KalamehFN", "Kara", "Morabba", "Noora", "NooraFN", "Omid", "On", "Pelak", "PelakFN", "Peyda", "Pinar", "PinarFN", "Ravi", "Tahrir", "Tajrid", "Traffic", "Vanda", "VandaFN", "YekanBakh"];
-font_names_fa = ["آهنگ", "آهنگ‌شارپ", "علی‌بابا", "انجمن", "انجمن اعداد فارسی", "آریا", "آریا اعداد فارسی", "آذرمهر", "آذرمهر اعداد فارسی", "اژدر", "اژدر اعداد فارسی", "بیداد", "دال", "دانا", "دانا اعداد فارسی", "دانا نسخه2", "دانا نسخه2 اعداد فارسی", "دیباج", "فرهنگ", "فرهنگ اعداد فارسی", "فرهنگ‌شارپ", "ایرانسل", "ایران", "ایران‌شارپ", "ایران‌سنس", "ایران‌سنس اعداد فارسی", "ایران‌سنس‌ایکس", "ایران‌سنس‌ایکس اعداد فارسی", "ایران‌سنس دست‌نویس", "ایران‌سنس دست‌نویس اعداد فارسی", "ایران‌یکان", "ایران‌یکان اعداد فارسی", "کلمه", "کلمه اعداد فارسی", "کارا", "مربع", "نورا", "نورا اعداد فارسی", "امید", "آن", "پلاک", "پلاک اعداد فارسی", "پیدا", "پینار", "پینار اعداد فارسی", "راوی", "تحریر", "تجرید", "ترافیک", "وندا", "وندا اعداد فارسی", "یکان‌بخ"];
+font_names_en = ["Ahang", "AhangSharp", "Alibaba", "Anjoman", "AnjomanFN", "Aria", "AriaFN", "AzarMehr", "AzarMehrFN", "Azhdar", "AzhdarFN", "Bidad", "Daal", "Dana", "DanaFN", "Dana2", "Dana2FN", "Dibaj", "Farhang", "FarhangFN", "FarhangSharp", "Irancell", "IRAN", "IRANSharp", "IRANSans", "IRANSansFN", "IRANSansX", "IRANSansXFN", "IRANSansDN", "IRANSansDNFN", "IRANYekan", "IRANYekanFN", "Kalameh", "KalamehFN", "Kara", "Morabba", "Noora", "NooraFN", "Omid", "On", "Pelak", "PelakFN", "Peyda", "Pinar", "PinarFN", "Ravi", "Rokh", "RokhFN", "Tahrir", "Tajrid", "Traffic", "Vanda", "VandaFN", "YekanBakh"];
+font_names_fa = ["آهنگ", "آهنگ‌شارپ", "علی‌بابا", "انجمن", "انجمن اعداد فارسی", "آریا", "آریا اعداد فارسی", "آذرمهر", "آذرمهر اعداد فارسی", "اژدر", "اژدر اعداد فارسی", "بیداد", "دال", "دانا", "دانا اعداد فارسی", "دانا نسخه2", "دانا نسخه2 اعداد فارسی", "دیباج", "فرهنگ", "فرهنگ اعداد فارسی", "فرهنگ‌شارپ", "ایرانسل", "ایران", "ایران‌شارپ", "ایران‌سنس", "ایران‌سنس اعداد فارسی", "ایران‌سنس‌ایکس", "ایران‌سنس‌ایکس اعداد فارسی", "ایران‌سنس دست‌نویس", "ایران‌سنس دست‌نویس اعداد فارسی", "ایران‌یکان", "ایران‌یکان اعداد فارسی", "کلمه", "کلمه اعداد فارسی", "کارا", "مربع", "نورا", "نورا اعداد فارسی", "امید", "آن", "پلاک", "پلاک اعداد فارسی", "پیدا", "پینار", "پینار اعداد فارسی", "راوی", "رخ", "رخ اعداد فارسی", "تحریر", "تجرید", "ترافیک", "وندا", "وندا اعداد فارسی", "یکان‌بخ"];
 
 function previousFontSet() {
   if ( font_names_en[font_names_en.indexOf(this_font) - 1] ) {
@@ -523,7 +523,7 @@ function Morabba() {
   font_weights = ['200', '300', '400', '500', '600', '700', '800', '900', '950'];
   font_buyable = true;
   font_shop_domain = "fontiran.com";
-  font_shop_url = "https://fontiran.com/فونت-کلمه";
+  font_shop_url = "https://fontiran.com/فونت-مربع";
   fontfaceURLSet();
 }
 
@@ -663,7 +663,35 @@ function Ravi() {
   font_weights = ['100', '300', '400', '500', '600', '700', '800', '900'];
   font_buyable = true;
   font_shop_domain = "rbakhtiarifard.ir";
-  font_shop_url = "http://rbakhtiarifard.ir/typefaces/ravi";
+  font_shop_url = "https://rbakhtiarifard.ir/ravi-typeface";
+  fontfaceURLSet();
+}
+
+function Rokh() {
+  this_font = "Rokh";
+  previousFontSet();
+  nextFontSet();
+  fontNameSet();
+  font_version = "1.0";
+  font_creator = "کامیاب جعفری";
+  font_weights = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
+  font_buyable = true;
+  font_shop_domain = "fontiran.com";
+  font_shop_url = "https://fontiran.com/فونت-رخ-حرفهای";
+  fontfaceURLSet();
+}
+
+function RokhFN() {
+  this_font = "RokhFN";
+  previousFontSet();
+  nextFontSet();
+  fontNameSet();
+  font_version = "1.0";
+  font_creator = "کامیاب جعفری";
+  font_weights = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
+  font_buyable = true;
+  font_shop_domain = "fontiran.com";
+  font_shop_url = "https://fontiran.com/فونت-رخ-حرفهای";
   fontfaceURLSet();
 }
 
@@ -747,6 +775,6 @@ function YekanBakh() {
   font_weights = ['100', '200', '300', '400', '500', '700', '800', '900'];
   font_buyable = true;
   font_shop_domain = "rbakhtiarifard.ir";
-  font_shop_url = "http://rbakhtiarifard.ir/typefaces/yekanbakh";
+  font_shop_url = "https://rbakhtiarifard.ir/yekan-bakh-typeface";
   fontfaceURLSet();
 }
